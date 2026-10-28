@@ -1628,13 +1628,15 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	function startAndEnd()
-	{
-		if(endingSong)
-			endSong();
-		else
-			startCountdown();
-	}
+function startAndEnd()
+{
+    if(endingSong)
+        endSong();
+    else if(startedCountdown)
+        inCutscene = false;
+    else
+        startCountdown();
+}
 
 	var dialogueCount:Int = 0;
 	public var psychDialogue:DialogueBoxPsych;
