@@ -8,18 +8,14 @@
     "disable_editor": true,
     "addOption":
     [
-        "story_mode",
         "freeplay",
-        "mods",
-        "awards",
         "credits",
-        "donate",
         "options"
     ],
     "addText":
     [
-        "Custom MainMenu by Kivers",
         "Friday Night Funkin' v 0.2.8",
-        "Psych Engine v 0.6.3"
+        "Psych Engine v 0.6.3",
+        "New Build by IShedevr"
     ]
 }
