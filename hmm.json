@@ -67,7 +67,7 @@
             "type":"git",
             "dir":null,
             "ref":"master",
-            "url":"https://github.com/Sirox228/linc_luajit"
+            "url":"https://github.com/IShedevr/linc_luajit"
         },
         {
             "name":"hxCodec",
