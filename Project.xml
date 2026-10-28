@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Psych Engine" file="PsychEngine" packageName="com.kivers.psychengine" package="com.kivers.psychengine" main="Main" version="0.2.8" company="Kivers" />
+	<app title="Shucks DEMO" file="PsychEngine" packageName="com.ishedevr.psychengine" package="com.ishedevr.psychengine" main="Main" version="0.2.8" company="ishedevr" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -192,6 +192,7 @@
 	<!-- _________________________________ Android Stuff _______________________________ -->
 	<config:android permission="android.permission.READ_EXTERNAL_STORAGE" if="android"/>
 	<config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" if="android"/>
+	<config:android permission="android.permission.RECORD_AUDIO" if="android"/>
   <!--<config:android gradle-version="7.5.1" />
   <config:android gradle-plugin="7.3.1" />-->
 
