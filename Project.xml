@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Shucks DEMO" file="PsychEngine" packageName="com.ishedevr.psychengine" package="com.ishedevr.psychengine" main="Main" version="0.2.8" company="ishedevr" />
+	<app title="Shucks DEMO" file="Shucks" packageName="com.ishedevr.psychengine" package="com.ishedevr.psychengine" main="Main" version="0.2.8" company="ishedevr" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
