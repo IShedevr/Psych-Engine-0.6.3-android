@@ -71,10 +71,10 @@ class TitleState extends MusicBeatState
         var pillarEdge = makeSprite('menus/title/pillar-edge');
         add(pillarEdge);
 
-        spikeU = new FlxBackdrop(Paths.image('menus/title/spikes'), 1, 0, true, false);
-        spikeD = new FlxBackdrop(Paths.image('menus/title/spikes'), 1, 0, true, false);
-        add(spikeU);
-        add(spikeD);
+     //   spikeU = new FlxBackdrop(Paths.image('menus/title/spikes'), 1, 0, true, false);
+     //   spikeD = new FlxBackdrop(Paths.image('menus/title/spikes'), 1, 0, true, false);
+     //   add(spikeU);
+    //    add(spikeD);
 
         logo = makeSprite('menus/title/logo');
         add(logo);
