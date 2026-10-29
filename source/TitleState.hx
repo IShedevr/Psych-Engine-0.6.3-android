@@ -184,7 +184,7 @@ class TitleState extends MusicBeatState
             if (glow != null) glow.color = FlxColor.WHITE;
             if (startButton != null) startButton.alpha = 1;
 
-            confirmSound = FlxG.sound.play(Paths.sound('menu/confirm'));
+            confirmSound = FlxG.sound.play(Paths.sound('confirmMenu'));
             FlxG.camera.fade(FlxColor.BLACK, 0.55, false, function()
             {
                 FlxG.switchState(new MainMenuState());
