@@ -81,15 +81,9 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Shucks Team and Port Team'],
+			['Shucks Port Team'],
 			['I_Shedevr',           'Matadorablock',    'Android Porter',                           'https://github.com/IShedevr',                              '444444'],
 			['Mnih',                'Omt',              'Effects for Port',                         'https://www.youtube.com/@AnimAleksuichik228',              'ff9354'],
-			['BetaSheep',           'dev',              'Owner / Director / Artist / Animator',     'https://x.com/That0neZer0',                                'FFFFFF'],
-			['Kane Sucks',          'dev',              'Director / Composer / Artist',             'https://x.com/KaneSucksReal',                              'FFFFFF'],
-			['coquers_',            'dev',              'Director / Composer / Writer',             'https://x.com/coquers_',                                   'FFFFFF'],
-			['Care',                'dev',              'Charter / Programmer',                     'https://x.com/_chronicsilly',                              'FFFFFF'],
-			['Jautrey',             'dev',              'Composer / Former Voice Actor',            'https://x.com/Jautrey10',                                  'FFFFFF'],
-			['Other Devs',          'dev',              'Others Dev',                    'https://fridaynightfunking.fandom.com/wiki/Jeffy%27s_Infinite_Irida', 'FFFFFF'],
 			['Psych Engine Android Team'],
 			['MaysLastPlay',		'MaysLastPlay',		'Android Porter',							'https://www.youtube.com/channel/UCx0LxtFR8ROd9sFAq-UxDfw',	'5DE7FF'],
 			['Nuno Filipe Studios',	'nuno',				'Android Porter',							'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'989c99'],
