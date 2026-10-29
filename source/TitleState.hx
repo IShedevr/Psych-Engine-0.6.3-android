@@ -2,11 +2,8 @@ package;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
-import flixel.addons.display.FlxBackdrop;
 import flixel.input.keyboard.FlxKey;
 import flixel.math.FlxMath;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import flixel.system.FlxSound;
@@ -24,8 +21,6 @@ class TitleState extends MusicBeatState
     var logo:FlxSprite;
     var start:FlxSprite;
     var glow:FlxSprite;
-    var spikeU:FlxBackdrop;
-    var spikeD:FlxBackdrop;
     var entered:Bool = false;
     var confirmSound:FlxSound;
 
@@ -71,10 +66,6 @@ class TitleState extends MusicBeatState
         var pillarEdge = makeSprite('menus/title/pillar-edge');
         add(pillarEdge);
 
-     //   spikeU = new FlxBackdrop(Paths.image('menus/title/spikes'), 1, 0, true, false);
-     //   spikeD = new FlxBackdrop(Paths.image('menus/title/spikes'), 1, 0, true, false);
-     //   add(spikeU);
-    //    add(spikeD);
 
         logo = makeSprite('menus/title/logo');
         add(logo);
@@ -97,16 +88,6 @@ class TitleState extends MusicBeatState
         for (sprite in [bg, pillar3, pillar2, pillar1, pillarMid, pillarEdge, logo, glow, start, vignette])
             sprite.antialiasing = ClientPrefs.globalAntialiasing;
 
-        spikeU.scrollFactor.set();
-        spikeD.scrollFactor.set();
-        spikeU.velocity.x = -30;
-        spikeD.velocity.x = 30;
-        spikeU.setPosition(FlxG.width / 2 - spikeU.width / 2, -spikeU.height);
-        spikeD.setPosition(FlxG.width / 2 - spikeD.width / 2, FlxG.height);
-        spikeD.flipY = true;
-        spikeU.alpha = 0;
-        spikeD.alpha = 0;
-        spikeU.antialiasing = spikeD.antialiasing = ClientPrefs.globalAntialiasing;
 
         FlxG.camera.zoom = 1.25;
     }
@@ -153,10 +134,6 @@ class TitleState extends MusicBeatState
         glow.y = FlxMath.lerp(glow.y, entered ? FlxG.height : FlxG.height - 316, 0.04);
         start.setPosition(glow.x + 382, glow.y + 114);
 
-        spikeU.alpha = FlxMath.lerp(spikeU.alpha, entered ? 0 : 1, 0.04);
-        spikeD.alpha = FlxMath.lerp(spikeD.alpha, entered ? 0 : 1, 0.04);
-        spikeU.y = FlxMath.lerp(spikeU.y, entered ? -spikeU.height : 0, 0.04);
-        spikeD.y = FlxMath.lerp(spikeD.y, entered ? FlxG.height : FlxG.height - spikeD.height, 0.04);
         if (entered) glow.alpha = FlxMath.lerp(glow.alpha, 0.1, 0.04);
     }
 }
