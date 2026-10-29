@@ -1,9 +1,9 @@
 package;
 
-import flixel.util.FlxAxes;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.display.FlxBackdrop;
+import flixel.input.keyboard.FlxKey;
 import flixel.math.FlxMath;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
@@ -14,6 +14,10 @@ import openfl.display.BlendMode;
 
 class TitleState extends MusicBeatState
 {
+    public static var muteKeys:Array<FlxKey> = [FlxKey.ZERO];
+    public static var volumeDownKeys:Array<FlxKey> = [FlxKey.MINUS, FlxKey.NUMPADMINUS];
+    public static var volumeUpKeys:Array<FlxKey> = [FlxKey.PLUS, FlxKey.NUMPADPLUS];
+
     var logo:FlxSprite;
     var start:FlxSprite;
     var glow:FlxSprite;
@@ -39,7 +43,7 @@ class TitleState extends MusicBeatState
         Highscore.load();
 
         if (FlxG.sound.music == null)
-            CoolUtil.playMusic(Paths.music('menu'), true, 1, true);
+            FlxG.sound.playMusic(Paths.music('menu'), 1, true);
 
         // Full custom title screen: no original GF/logo intro.
         var bg = makeSprite('menus/title/bg');
@@ -64,8 +68,8 @@ class TitleState extends MusicBeatState
         var pillarEdge = makeSprite('menus/title/pillar-edge');
         add(pillarEdge);
 
-        spikeU = new FlxBackdrop(Paths.image('menus/title/spikes'), FlxAxes.X);
-        spikeD = new FlxBackdrop(Paths.image('menus/title/spikes'), FlxAxes.X);
+        spikeU = new FlxBackdrop(Paths.image('menus/title/spikes'), 1, 0, true, false);
+        spikeD = new FlxBackdrop(Paths.image('menus/title/spikes'), 1, 0, true, false);
         add(spikeU);
         add(spikeD);
 
