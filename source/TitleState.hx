@@ -14,6 +14,9 @@ import openfl.display.BlendMode;
 
 class TitleState extends MusicBeatState
 {
+    public static var initialized:Bool = false;
+    public static var closedState:Bool = false;
+
     public static var muteKeys:Array<FlxKey> = [FlxKey.ZERO];
     public static var volumeDownKeys:Array<FlxKey> = [FlxKey.MINUS, FlxKey.NUMPADMINUS];
     public static var volumeUpKeys:Array<FlxKey> = [FlxKey.PLUS, FlxKey.NUMPADPLUS];
