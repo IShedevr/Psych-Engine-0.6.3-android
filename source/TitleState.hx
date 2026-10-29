@@ -1,5 +1,6 @@
 package;
 
+import flixel.util.FlxAxes;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.display.FlxBackdrop;
